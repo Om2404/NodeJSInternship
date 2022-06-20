@@ -1,0 +1,14 @@
+const express = require('express');
+const res = require('express');
+const app = express();
+
+app.get('', (req, resp) => {
+    resp.send('Hello this is our first page');
+});
+
+app.get("/about", (req, resp) => {
+    resp.send('<input type="text", placeholder="Enter your name" /> <button> Submit</button>')
+});
+
+app.listen(5500);
+
